@@ -15,7 +15,7 @@ def main():
 	plt.title('Survived')
 
 	plt.subplot2grid((3, 4), (0, 1))
-	# kind='bar'畫出直條圖 or kind='pie
+	# kind='bar'畫出直條圖 or kind='pie'
 	data.Pclass.value_counts(normalize=True).sort_index().plot(kind='bar')
 	plt.title('Pclass')
 
