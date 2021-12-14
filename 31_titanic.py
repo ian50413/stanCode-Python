@@ -42,7 +42,7 @@ def main():
 	plt.subplot2grid((3, 4), (2, 1))
 	# kind='bar'畫出直條圖 or kind='pie
 	# kind='bar'畫出直條圖 or kind='pie
-	data.Survived[(data.Sex == 'male') & (data.Pclass == 3)].value_counts(normalize=True).sort_index().plot(kind='bar',																				color='magenta')
+	data.Survived[(data.Sex == 'male') & (data.Pclass == 3)].value_counts(normalize=True).sort_index().plot(kind='bar', color='magenta')
 	plt.title('Poor Man Survived')
 
 	plt.subplot2grid((3, 4), (2, 2))
